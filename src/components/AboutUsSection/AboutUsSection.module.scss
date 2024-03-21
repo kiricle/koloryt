@@ -1,0 +1,23 @@
+.section {
+    background-image: url('./trees.jpg');
+    background-size: 100% 100%;
+    padding: 104px;
+    font-size: 36px;
+}
+
+.content {
+    font-family: "Capriola", sans-serif;
+    max-width: min(950px, 90%);
+    margin-inline: auto;
+    text-align: center;
+}
+
+.blue {
+    color: #0B0599;
+}
+
+@media screen and (max-width: 700px) {
+    .section {
+        font-size: 20px;
+    }
+}
