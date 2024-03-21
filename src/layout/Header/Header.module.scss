@@ -1,0 +1,26 @@
+.header {
+    padding: 46px 0;
+    border-bottom: 1px solid #0B0599;
+    margin-bottom: 24px;
+}
+
+.container {
+    width: var(--container-max-width);
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 89px;
+}
+
+.logo {
+    flex-shrink: 2;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        gap: 25px;
+    }
+
+}

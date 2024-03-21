@@ -1,0 +1,53 @@
+.section {
+    background-image: url('./collection.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 10% 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Capriola", sans-serif;
+}
+
+.description {
+    font-size: 18px;
+    max-width: 400px;
+    margin-bottom: 60px;
+    color: rgba(0, 0, 0, .4);
+}
+
+.link {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 550px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .content {
+        max-width: 250px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .link {
+        gap: 5px;
+    }
+}
