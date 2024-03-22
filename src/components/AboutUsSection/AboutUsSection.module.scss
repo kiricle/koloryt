@@ -3,13 +3,13 @@
     background-size: 100% 100%;
     padding: 104px;
     font-size: 36px;
-    font-size: clamp(18px, 3vw, 36px);
+    font-size: clamp(14px, 3vw, 36px);
     text-align: center;
 }
 
 .content {
     font-family: "Capriola", sans-serif;
-    max-width: min(950px, 90%);
+    max-width: min(950px, 95%);
     margin-inline: auto;
     text-align: center;
     margin-bottom: 80px;
@@ -30,8 +30,9 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 250px) {
     .section {
-        font-size: 18px;
+        font-size: 10px;
     }
+
 }
