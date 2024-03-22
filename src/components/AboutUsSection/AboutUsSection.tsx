@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from './AboutUsSection.module.scss';
+import { Link } from '@tanstack/react-router';
 
 export const AboutUsSection = () => {
     let content =
@@ -28,6 +29,7 @@ export const AboutUsSection = () => {
                 <span className={styles.blue}>KOLORYT</span>
                 {content}
             </div>
+            <Link to='/' className={styles.link}>Більше про нас</Link>
         </section>
     );
 };

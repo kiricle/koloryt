@@ -3,6 +3,8 @@
     background-size: 100% 100%;
     padding: 104px;
     font-size: 36px;
+    font-size: clamp(18px, 3vw, 36px);
+    text-align: center;
 }
 
 .content {
@@ -10,14 +12,26 @@
     max-width: min(950px, 90%);
     margin-inline: auto;
     text-align: center;
+    margin-bottom: 80px;
 }
 
 .blue {
     color: #0B0599;
 }
 
+.link {
+    font-size: 20px;
+    color: #0B0599;
+
+    transition: .3s color;
+
+    &:hover {
+        color: purple;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .section {
-        font-size: 20px;
+        font-size: 18px;
     }
 }

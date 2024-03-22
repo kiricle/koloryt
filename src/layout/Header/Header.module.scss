@@ -1,11 +1,11 @@
 .header {
-    padding: 46px 0;
+    padding: 46px;
     border-bottom: 1px solid #0B0599;
     margin-bottom: 24px;
 }
 
 .container {
-    width: var(--container-max-width);
+    // width: var(--container-max-width);
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
@@ -22,5 +22,4 @@
     .container {
         gap: 25px;
     }
-
 }

@@ -14,17 +14,20 @@
 }
 
 .title {
-    font-size: 30px;
+    font-size: clamp(20px, 5vw, 30px);
     font-weight: 500;
     font-family: "Capriola", sans-serif;
     text-transform: uppercase;
+    color: #0B0599;
 }
 
 .description {
-    font-size: 18px;
+    font-size: clamp(12px, 3vw, 18px);
     max-width: 400px;
     margin-bottom: 60px;
     color: rgba(0, 0, 0, .4);
+    font-family: "Apple Chancery", sans-serif;
+    font-style: italic;
 }
 
 .link {
@@ -37,16 +40,8 @@
 }
 
 @media screen and (max-width: 550px) {
-    .title {
-        font-size: 20px;
-    }
-
     .content {
         max-width: 250px;
-    }
-
-    .description {
-        font-size: 12px;
     }
 
     .link {
