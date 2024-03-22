@@ -1,0 +1,50 @@
+.section {
+    background-image: url('./collection.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 10% 0;
+    padding-left: 3%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title {
+    font-size: clamp(20px, 5vw, 30px);
+    font-weight: 500;
+    font-family: "Capriola", sans-serif;
+    text-transform: uppercase;
+    color: #0B0599;
+}
+
+.description {
+    font-size: clamp(12px, 3vw, 18px);
+    max-width: 400px;
+    margin-bottom: 60px;
+    color: rgba(0, 0, 0, .4);
+    font-family: "Apple Chancery", sans-serif;
+    font-style: italic;
+}
+
+.link {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 550px) {
+    .content {
+        max-width: 250px;
+    }
+
+    .link {
+        gap: 5px;
+    }
+}
