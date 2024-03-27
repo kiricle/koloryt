@@ -1,11 +1,10 @@
 .header {
     padding: 46px;
-    border-bottom: 1px solid #0B0599;
+    border-bottom: 1px solid var(--blue);
     margin-bottom: 24px;
 }
 
 .container {
-    // width: var(--container-max-width);
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
@@ -18,7 +17,13 @@
     flex-shrink: 2;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+    .header {
+        padding: 20px;
+        border: none;
+        margin-bottom: 0;
+    }
+
     .container {
         gap: 25px;
     }

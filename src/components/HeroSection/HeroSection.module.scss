@@ -1,9 +1,9 @@
 .section {
     background-image: url('./collection.jpg');
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    padding: 10% 0;
+    padding: clamp(44px, 10%, 181px) 0 75px;
     padding-left: 3%;
 }
 
@@ -18,33 +18,51 @@
     font-weight: 500;
     font-family: "Capriola", sans-serif;
     text-transform: uppercase;
-    color: #0B0599;
+    color: var(--blue);
 }
 
 .description {
     font-size: clamp(12px, 3vw, 18px);
     max-width: 400px;
-    margin-bottom: 60px;
+    margin-bottom: clamp(48px, 3vw, 60px);
     color: rgba(0, 0, 0, .4);
-    font-family: "Apple Chancery", sans-serif;
     font-style: italic;
 }
 
 .link {
-    font-size: 18px;
+    width: fit-content;
+    font-size: clamp(12px, 3vw, 18px);
     display: flex;
     align-items: center;
-    gap: 20px;
+    position: relative;
+
+    gap: clamp(5px, 3vw, 17px);
     text-decoration: none;
-    color: black;
+    color: var(--gray-500);
+
+    &::after {
+        content: "";
+        width: 81%;
+        border-bottom: 1px solid var(--blue);
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        opacity: 0;
+        transition: opacity 300ms ease;
+    }
+
+    &:active::after {
+        opacity: 1;
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 550px) {
+
     .content {
         max-width: 250px;
-    }
-
-    .link {
-        gap: 5px;
     }
 }
