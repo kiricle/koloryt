@@ -1,6 +1,7 @@
 .header {
     padding: 46px;
     margin-bottom: 24px;
+    position: relative;
 }
 
 .container {
@@ -8,7 +9,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     height: 89px;
 }
 
