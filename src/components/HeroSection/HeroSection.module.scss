@@ -23,10 +23,11 @@
 
 .description {
     font-size: clamp(12px, 3vw, 18px);
-    max-width: 400px;
+    max-width: 450px;
     margin-bottom: clamp(48px, 3vw, 60px);
-    color: rgba(0, 0, 0, .4);
+    color: var(--gray-500);
     font-style: italic;
+    line-height: 1.5;
 }
 
 .link {

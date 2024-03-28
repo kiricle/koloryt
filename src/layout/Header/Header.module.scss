@@ -1,6 +1,5 @@
 .header {
     padding: 46px;
-    border-bottom: 1px solid var(--blue);
     margin-bottom: 24px;
 }
 
@@ -20,7 +19,6 @@
 @media screen and (max-width: 600px) {
     .header {
         padding: 20px;
-        border: none;
         margin-bottom: 0;
     }
 

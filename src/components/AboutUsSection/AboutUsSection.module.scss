@@ -3,19 +3,17 @@
     background-size: 50% 100%;
     background-position: right;
     background-repeat: no-repeat;
-    padding: 104px;
-    padding: clamp(64px, 3vw, 104px) clamp(12px, 13vw, 210px) clamp(64px, 3vw, 104px);
-    font-size: 36px;
+    padding: clamp(64px, 3vw, 104px) clamp(12px, 4vw, 210px) clamp(64px, 3vw, 104px);
     font-size: clamp(14px, 3vw, 36px);
     text-align: center;
 }
 
 .content {
     font-family: "Capriola", sans-serif;
-    max-width: min(950px, 95%);
+    max-width: min(950px, 94%);
     margin-inline: auto;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
 .blue {
