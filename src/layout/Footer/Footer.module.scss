@@ -4,6 +4,7 @@
     padding-top: 63px;
     border-top: 1px solid #CDCDCD;
 
+    padding-bottom: clamp(14px,3vw,64px);
     &::before {
         content: "";
         background-color: var(--blue);

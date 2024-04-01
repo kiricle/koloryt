@@ -1,5 +1,5 @@
 import LogoSVG from './logo.svg';
-import styles from "./Logo.module.scss"
+import styles from './Logo.module.scss';
 
 export const Logo = ({ className }: { className?: string }) => {
     return (
