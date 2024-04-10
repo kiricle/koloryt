@@ -2,38 +2,33 @@
     background: rgb(11, 5, 153);
     background: radial-gradient(circle, rgba(11, 5, 153, 1) 0%, rgba(97, 178, 228, 1) 80%);
     color: white;
-    padding-bottom: 230px;
+    padding-block: 126px 131px;
+    display: grid;
+    place-content: center;
+    justify-items: center;
 }
 
 .message {
-    padding-top: clamp(72px, 10vw, 141px);
-    padding-left: clamp(16px, 10vw, 139px);
-    padding-bottom: 95px;
     font-size: clamp(16px, 5vw, 32px);
-    font-weight: 300;
-}
-
-.error {
-    padding-bottom: 87px;
-    padding-left: clamp(50px, 10vw, 353px);
-    font-size: clamp(64px,15vw,128px);
-    font-weight: 300;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    margin-bottom: 48px;
 }
 
 .img {
-    margin-right: 55px;
-    width: clamp(38px,6vw,78px);
-    vertical-align: middle;
+    margin-bottom: 24px;
+    width: 100%;
+    max-width: 684px;
 }
 
 .link {
     border: 1px solid white;
     border-radius: 5px;
-    font-weight: lighter;
-    font-size: clamp(16px,4vw,24px);
+    font-weight: 400;
+    font-size: clamp(16px, 4vw, 32px);
     padding: 10px 20px;
-    margin-left: clamp(20px,6vw,139px);
 
+    max-width: fit-content;
     cursor: pointer;
 
     &:hover {
